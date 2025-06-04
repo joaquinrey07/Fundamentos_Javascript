@@ -1,9 +1,9 @@
 // Declaración de variables
 let colorFavorito = ["rojo", "celeste", "azul"];
 let elMejorClub = "FC barcelona";
-let cadenaTexto = "Hola, mundo";
-let valorBooleano = true;
-let arregloNumeros = [1, 2, 3, 4];
+let miEdad = 16;
+let valorBooleano = true;  // Valor Verdadero o falso(0 , 1)
+let arregloNumeros = [1, 2, 3];
 let objetoPersona = { nombre: "Ana", edad: 30 };
 let valorIndefinido;
 let valorNulo = null;
@@ -18,8 +18,8 @@ function mostrarElMejorClub() {
   alert("El mejor club: " + elMejorClub);
 }
 
-function mostrarCadenaTexto() {
-  alert("Cadena de texto: " + cadenaTexto);
+function mostrarMiEdad() {
+  alert("Mi edad: " + miEdad);
 }
 
 function mostrarBooleano() {
