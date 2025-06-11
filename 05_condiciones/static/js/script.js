@@ -43,13 +43,15 @@ function numeroPar() {
  Si es mayor o igual a 30, muestra “Hace calor”, de lo contrario
  muestra “Clima agradable”. */
 
-function temperaturaActual(){
+function temperaturaActual() {
     let temperatura = parseInt(prompt("Ingrese la temperatura: "));
-    
-    if (temperatura >= 30) {
+
+    if (temperatura >= 30 && temperatura < 50) {
         alert("Hace calor")
-    } else{
-        alert("Clima agradable")
+    } else if (temperatura >= -5 && temperatura <= 15) {
+        alert("Agradable")
+    } else {
+        alert("Ingrese un valor valido");
     }
 }
 
@@ -57,6 +59,36 @@ function temperaturaActual(){
 /*  Solicita dos números al usuario.
  Compara ambos y muestra cuál es mayor o si son iguales. */
 
- function compararNum(){
-    let numero = prompt
- }
+function compararNum() {
+let num1 = parseInt(prompt("Ingresar primer numero"));
+let num2 = parseInt(prompt("Ingresar segundo numero"));
+if(num1 < num2){
+    alert("El numero " + "es menor que " + num2);
+} else if(num1 == num2){
+    alert("el numero " + num1 + "es igual que " + num2);
+} else{
+    alert("el numero " + num1 + "es mayor que" + num2);
+}
+}
+
+function mostrarNotas(){
+let nota = parseInt(prompt("Ingresa tu nota: "));
+
+if(ingresa < 4){
+    alert("desaprobado");
+} else if (ingresa >= 4 && ingresa <=7){
+    alert("aprobado");
+} else {
+    alert("por favor, ingresar valor valido");
+}
+}
+
+function usuarioAdmin(){
+    let user = "admin";
+    let admin = prompt("Ingrese un usuario: ");
+    if(user == admin){
+        alert("Bienvenido administrador")
+    } else{
+        alert("acceso denegado")
+    }
+}
