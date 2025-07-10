@@ -60,35 +60,53 @@ function temperaturaActual() {
  Compara ambos y muestra cuál es mayor o si son iguales. */
 
 function compararNum() {
-let num1 = parseInt(prompt("Ingresar primer numero"));
-let num2 = parseInt(prompt("Ingresar segundo numero"));
-if(num1 < num2){
-    alert("El numero " + "es menor que " + num2);
-} else if(num1 == num2){
-    alert("el numero " + num1 + "es igual que " + num2);
-} else{
-    alert("el numero " + num1 + "es mayor que" + num2);
-}
-}
-
-function mostrarNotas(){
-let nota = parseInt(prompt("Ingresa tu nota: "));
-
-if(ingresa < 4){
-    alert("desaprobado");
-} else if (ingresa >= 4 && ingresa <=7){
-    alert("aprobado");
-} else {
-    alert("por favor, ingresar valor valido");
-}
+    let num1 = parseInt(prompt("Ingresar primer numero"));
+    let num2 = parseInt(prompt("Ingresar segundo numero"));
+    if (num1 < num2) {
+        alert("El numero " + "es menor que " + num2);
+    } else if (num1 == num2) {
+        alert("el numero " + num1 + "es igual que " + num2);
+    } else {
+        alert("el numero " + num1 + "es mayor que" + num2);
+    }
 }
 
-function usuarioAdmin(){
+function mostrarNotas() {
+    let nota = parseInt(prompt("Ingresa tu nota: "));
+
+    if (ingresa < 4) {
+        alert("desaprobado");
+    } else if (ingresa >= 4 && ingresa <= 7) {
+        alert("aprobado");
+    } else {
+        alert("por favor, ingresar valor valido");
+    }
+}
+
+function usuarioAdmin() {
     let user = "admin";
     let admin = prompt("Ingrese un usuario: ");
-    if(user == admin){
+    if (user == admin) {
         alert("Bienvenido administrador")
-    } else{
+    } else {
         alert("acceso denegado")
     }
 }
+
+
+function precio() {  // Creacion de la funcion 
+    //Añadir un porcentaje de descuento e IVA y mostrar
+    let iva = 0.19;
+    let descuento = parseFloat(prompt("Ingrese el valor de  descuento: Ejemplo 20"));
+    descuento /= 100; // Operacion para llevar a decimal 
+    let precioDescuento = parseFloat(prompt("ingrese el precio del producto"));
+    if (precioDescuento > 10000) {
+        alert(`El valor ingresado fue: ${precio}
+            `);
+    } else {
+        alert("precio normal");
+    }
+}
+
+
+
