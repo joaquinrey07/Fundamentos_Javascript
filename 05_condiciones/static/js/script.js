@@ -93,6 +93,16 @@ function usuarioAdmin() {
     }
 }
 
+function palabraMayuscula() {
+    let letra = prompt("Ingresa palabra");
+    let letraA = "A";
+    if (letra[0] == letraA) {
+        alert("la palabra comienza con a mayuscula");
+    } else {
+        alert("la palabra no comienza con a mayuscula");
+    }
+}
+
 
 function precio() {  // Creacion de la funcion 
     //Añadir un porcentaje de descuento e IVA y mostrar
@@ -105,6 +115,23 @@ function precio() {  // Creacion de la funcion
             `);
     } else {
         alert("precio normal");
+    }
+}
+
+
+function licenciaEdad() {
+    let edad = parseInt(prompt("Ingrese su Edad: "));
+    if (edad >= 18 && edad < 100) {
+        let licencia = prompt("Indica si tiene licencia si/no");
+        if (licencia == "si") {
+            alert("Usted puede conducir");
+        } else if(licencia == "no"){
+            alert("Usted no puede conducir")
+        } else{
+            alert("Ingrese valores validos")
+        }
+    } else {
+        alert("Ingrese valores validos")
     }
 }
 
