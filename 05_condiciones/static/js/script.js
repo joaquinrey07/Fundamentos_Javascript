@@ -125,9 +125,9 @@ function licenciaEdad() {
         let licencia = prompt("Indica si tiene licencia si/no");
         if (licencia == "si") {
             alert("Usted puede conducir");
-        } else if(licencia == "no"){
+        } else if (licencia == "no") {
             alert("Usted no puede conducir")
-        } else{
+        } else {
             alert("Ingrese valores validos")
         }
     } else {
@@ -135,5 +135,19 @@ function licenciaEdad() {
     }
 }
 
+function encontrarPalabraLarga() {
+    let pal1 = prompt("Ingresar primera palabra");
+    let pal2 = prompt("ingresar segunda palabra");
 
+    if (pal1 == "" && pal2 == "") {
+        alert("Ingrese algun valor para trabajar...")
+    } else if(pal1.length < pal2.length){
+        alert(`La palabra mas larga es ${pal2} con ${pal2.length} caracteres`)
+    }else if(pal1.length == pal2.length){
+        alert(`Las palabras ${pal2} y ${pal1} tienen mismo largo con:\n
+            ${pal1.length} caracteres`)
+    } else {
+        alert(`La palabra mas larga es ${pal1} con ${pal1.length} caracteres`)
+    }
+}
 
