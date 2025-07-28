@@ -151,7 +151,7 @@ function encontrarPalabraLarga() {
     }
 }
 
-    
+
 function validarCorreo() {
     let email = prompt("Ingrese su correo electronico: ");
     if (email.includes("@")) {
@@ -162,12 +162,27 @@ function validarCorreo() {
 }
 
 
-function verificarNumero(){
+function verificarNumero() {
     let numero = parseInt(prompt("Ingrese un numero: "));
 
-    if(numero > 0){
-        alert
+    if (numero > 0) {
+        alert(`el ${numero} es positivo`);
+    } else if (numero == 0) {
+        alert(`el ($numero) es invalido`);
     }
+    else {
+        alert(`el $(numero es negativo)`);
+    }
+}
 
 
+function ingresarHora() {
+    let horaActual = parseInt(prompt("Ingresar hora en formato 24hrs"));
+    if (horaActual < 12) {
+        alert(`"Buenos dias" son las ${horaActual} hrs!.`);
+    } else if (horaActual >= 12 && horaActual <= 18) {
+        alert("Buenas tardes");
+    } else {
+        alert("Buenas noches");
+    }
 }

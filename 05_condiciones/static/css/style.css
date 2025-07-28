@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.ejercicios-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.ejercicios-2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.ejercicios-3 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    align-items: center;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    border: solid skyblue;
+    border-radius: 10px;
+    transition: background-color 1s;
+}
+
+button:hover {
+    background-color: #00FFFF;
+}
