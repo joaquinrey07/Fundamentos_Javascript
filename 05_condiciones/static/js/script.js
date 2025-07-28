@@ -141,9 +141,9 @@ function encontrarPalabraLarga() {
 
     if (pal1 == "" && pal2 == "") {
         alert("Ingrese algun valor para trabajar...")
-    } else if(pal1.length < pal2.length){
+    } else if (pal1.length < pal2.length) {
         alert(`La palabra mas larga es ${pal2} con ${pal2.length} caracteres`)
-    }else if(pal1.length == pal2.length){
+    } else if (pal1.length == pal2.length) {
         alert(`Las palabras ${pal2} y ${pal1} tienen mismo largo con:\n
             ${pal1.length} caracteres`)
     } else {
@@ -151,3 +151,23 @@ function encontrarPalabraLarga() {
     }
 }
 
+    
+function validarCorreo() {
+    let email = prompt("Ingrese su correo electronico: ");
+    if (email.includes("@")) {
+        alert(`El correo ${email} es valido`);
+    } else {
+        alert(`El correo ${email} es invalido`);
+    }
+}
+
+
+function verificarNumero(){
+    let numero = parseInt(prompt("Ingrese un numero: "));
+
+    if(numero > 0){
+        alert
+    }
+
+
+}
