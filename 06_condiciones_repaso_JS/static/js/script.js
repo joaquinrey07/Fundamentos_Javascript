@@ -102,7 +102,7 @@ Si no → “Número impar”.
 
 function verificarPar() {
     let numero = parseInt(prompt("Ingrese su numero: "));
-    if (numero % 2) {
+    if (numero % 2 == 0) {
         alert("Su numero es par")
     } else {
         alert("Su numero no es par")
@@ -167,15 +167,53 @@ En cualquier otro caso → “Hola, visitante”.
 
 📘 Práctica: varias condiciones exclusivas. */
 
-function nombreCuenta(){
+function nombreCuenta() {
     let nombre = prompt("Ingrese un nombre ")
     let dany = "dany"
     let ely = "ely"
-    if(nombre == dany){
+    if (nombre == dany) {
         alert("Hola profesor")
-    }else if(nombre == ely){
+    } else if (nombre == ely) {
         alert("Hola mama")
-    } else{
+    } else {
         alert("Hola, visitante")
     }
+}
+
+
+/* 9️⃣ Nota de evaluación
+Pide una nota entre 1 y 7.
+Si es 4 o más → “Aprobado”.
+
+
+Si es menor que 4 → “Reprobado”.
+
+
+Si está fuera del rango 1–7 → “Nota inválida”.
+
+
+📘 Práctica: validaciones con límites. */
+
+function calificaciones() {
+    let nota = parseInt(prompt("Ingrese su nota: "))
+
+    if (nota <= 3.9 && nota >= 1.0) {
+        alert("Aprobado!")
+    } else if (nota >= 4.0 && nota <= 7.0) {
+        alert("Reprobado")
+    } else {
+        alert("Ingresa una nota valida")
+    }
+}
+
+
+
+function palabraClave() {
+    let frase = prompt("Escribe una frase: ");
+
+    if (frase.toLowerCase().includes("jesus")) {
+        alert("La frase ${frase} contiene la palabra clave");
+    } else {
+        alert("La frase ${frase} no contiene la palabra clave.");
+    };
 }
