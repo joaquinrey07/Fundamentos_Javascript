@@ -77,7 +77,7 @@ function ejecutarWhile4() {
 
 function ejecutarFor1() {
     let num = parseInt(prompt("Ingrese un numero: "))
-    let tablas = `Tabla de &{num}: `;
+    let tablas = `Tabla de ${num}: `;
     // Inicio de bucle for
     for (let i = 1; i <= 10; i++) {
         tablas += `\n ${num} x ${1} = ${num * i}`
